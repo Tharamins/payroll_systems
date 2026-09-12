@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0A0E17 0%, #121B2E 50%, #1A2746 100%);
+            color: #E8E6E3;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            padding: 50px;
+            background: rgba(26, 39, 70, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4A6FE3, #D4AF37);
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #4A6FE3, #D4AF37);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        h2 {
+            font-size: 16px;
+            color: #8A93A5;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        
+        a.launch-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #2A3F7A 0%, #4A6FE3 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(74, 111, 227, 0.3);
+        }
+        
+        a.launch-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(74, 111, 227, 0.5);
+        }
+        
+        .info-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            border-left: 3px solid #D4AF37;
+            text-align: left;
+        }
+        
+        .info-box h3 {
+            font-size: 14px;
+            color: #D4AF37;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .info-box p {
+            font-size: 13px;
+            color: #8A93A5;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .info-box strong {
+            color: #E8E6E3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payroll Management System</h1>
+        <h2>Enterprise Payroll Solution</h2>
+        
+        <a href="salarycode.html" class="launch-btn">Launch Application</a>
+        
+        <div class="info-box">
+            <h3>Demo Credentials</h3>
+            <p><strong>Admin:</strong> admin@company.com / admin123</p>
+            <p><strong>Employee:</strong> john.doe@company.com / password123</p>
+            <p style="margin-top: 15px; font-size: 12px; color: #8A93A5;">
+                New users can sign up with any valid email address.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
